@@ -1,5 +1,5 @@
 # Ready-code
-
+This is a collection of coding snippet useful to solve different common problems, mainly Front End world
 
 ## JS/TS normalize height container
 
