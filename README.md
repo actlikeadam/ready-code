@@ -6,7 +6,8 @@ If it's a good piece of code, add it here!
 ## JS/TS normalize height container
 
 Use case: Flexbox with inner flexbox column direction<br>
-Caveat: It does not work for hidden element
+Caveat: It does NOT work for hidden element<br>
+Demo: fiddle/codepen whatever
 
 ```
 public mounted () {
