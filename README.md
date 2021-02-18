@@ -1,7 +1,7 @@
 # Ready-code
 This is a collection of coding snippet useful to solve different common problems, mainly Front End world.
 
-If a good piece of code, add it here
+If it's a good piece of code, add it here!
 
 ## JS/TS normalize height container
 
