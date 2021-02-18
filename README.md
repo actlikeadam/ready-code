@@ -3,7 +3,7 @@
 
 ## JS/TS normalize height container
 
-Use case: Flexbox with inner flexbox column direction
+Use case: Flexbox with inner flexbox column direction<br>
 Caveat: It does not work for hidden element
 
 ```
