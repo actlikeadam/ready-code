@@ -31,3 +31,53 @@ public mounted () {
     }
   }
 ```
+
+
+## JS/TS Add accordion to list on mobile
+
+Use case: List too long<br>
+Caveat: It is NOT advisable for conditional lists, e.g. 10 elements showed partially in relation with Geolocation<br>
+Demo: fiddle/codepen whatever
+
+```
+<ul>
+    <li>a</b>
+    <li>b</b>
+    <li>c</b>
+    <details class="full-list" open>
+        <summary>See more</summary>
+        <li>d</b>
+        <li>e</b>
+        <li>f</b>
+        <li>h</b>
+        <li>g</b>
+    </details
+</ul>
+
+public mounted () {
+    // const hiddenList = document.querySelectorAll('.plan-item:nth-child(3)')
+    // const endOfList = document.querySelectorAll('.plan-items')
+    // hiddenList.forEach((target) => {
+    //   target.insertAdjacentHTML('afterend', '<details class="full-list" open><summary>See more</summary>')
+    // })
+    // document.querySelectorAll('.full-list').forEach((target) => {
+    //   target.replace('(<([^>]+)details>)', '')
+    // })
+    // endOfList.forEach((target) => {
+    //   target.insertAdjacentHTML('beforeend', '</details>')
+    // })
+
+    const details = document.querySelectorAll('details')
+    const summary = document.querySelectorAll('summary')
+
+    if (window.screen.width <= 600) {
+      details.forEach((target) => {
+        target.removeAttribute('open')
+      })
+
+      summary.forEach((target) => {
+        target.removeAttribute('hidden')
+      })
+    }
+}
+```
