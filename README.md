@@ -45,7 +45,7 @@ Demo: fiddle/codepen whatever
     <li>b</b>
     <li>c</b>
     <details class="full-list" open>
-        <summary>See more</summary>
+        <summary hidden>See more</summary>
         <li>d</b>
         <li>e</b>
         <li>f</b>
