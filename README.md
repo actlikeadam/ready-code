@@ -55,18 +55,6 @@ Demo: fiddle/codepen whatever
 </ul>
 
 public mounted () {
-    // const hiddenList = document.querySelectorAll('.plan-item:nth-child(3)')
-    // const endOfList = document.querySelectorAll('.plan-items')
-    // hiddenList.forEach((target) => {
-    //   target.insertAdjacentHTML('afterend', '<details class="full-list" open><summary>See more</summary>')
-    // })
-    // document.querySelectorAll('.full-list').forEach((target) => {
-    //   target.replace('(<([^>]+)details>)', '')
-    // })
-    // endOfList.forEach((target) => {
-    //   target.insertAdjacentHTML('beforeend', '</details>')
-    // })
-
     const details = document.querySelectorAll('details')
     const summary = document.querySelectorAll('summary')
 
