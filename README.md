@@ -69,3 +69,28 @@ public mounted () {
     }
 }
 ```
+
+
+## CSS parent selector
+
+Use case: Impossibility to add class to the interested selector with dynamic elements involved
+Caveat: none
+Demo: https://jsfiddle.net/actlikeadam/fw5dsej2/4/
+
+```
+HTML:
+<div class="container">
+  <div>
+    <p class="css-child">
+      CSS child
+    </p>
+  </div>
+</div>
+
+JS:
+const cssChild = document.querySelectorAll('.css-child')
+
+cssChild.forEach((c) => {
+  c.parentElement.classList.add('css-parent')
+})
+```
