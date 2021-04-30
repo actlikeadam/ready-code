@@ -73,8 +73,8 @@ public mounted () {
 
 ## CSS parent selector
 
-Use case: Impossibility to add class to the interested selector with dynamic elements involved
-Caveat: none
+Use case: Impossibility to add class to the interested selector with dynamic elements involved<br>
+Caveat: none<br>
 Demo: https://jsfiddle.net/actlikeadam/fw5dsej2/4/
 
 ```
