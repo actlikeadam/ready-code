@@ -94,3 +94,28 @@ cssChild.forEach((c) => {
   c.parentElement.classList.add('css-parent')
 })
 ```
+
+
+## Smooth scroll
+
+Use case: the necessity of a smooth scrool for #anchors in the same page
+Caveat: if you arrive from a different page, propably it will not work
+Demo:
+
+```
+HTML:
+<button class="preorder-btn">Click</button>
+ .
+ .
+ .smooth
+ .
+ .
+ <div id="pack-section"</div>
+
+JS:
+  document.querySelector('.preorder-btn')!.addEventListener('click', () => {
+    document.querySelector('#pack-section')!.scrollIntoView({
+      behavior: 'smooth'
+    })
+  })
+```
